@@ -1,1 +1,121 @@
-in
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Inmediata | Guillermo Castellanos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            accent: '#F59E0B', /* Dorado/Ámbar de alta conversión */
+                            accentHover: '#D97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <div class="bg-brand-accent text-brand-dark font-bold text-xs sm:text-sm py-2 px-4 text-center tracking-wide">
+        ⚡ ¡Cupos limitados disponibles para esta semana! Asegura tu espacio ahora.
+    </div>
+
+    <header class="relative overflow-hidden pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+        <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-10 pointer-events-none">
+            <div class="w-96 h-96 bg-brand-accent rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="mb-6 inline-block relative">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full p-1 bg-gradient-to-tr from-brand-accent to-yellow-300 shadow-xl mx-auto">
+                <img src="https://instagram.fbog4-2.fna.fbcdn.net/v/t51.2885-19/448842167_345167728514582_3070440333068695029_n.jpg?stp=dst-jpg_s150x150&_t=2&_n-1&_v=6&oh=00_AYC..." alt="Guillermo Castellanos" class="w-full h-full object-cover rounded-full bg-gray-800" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'">
+            </div>
+            <span class="absolute bottom-1 right-1 bg-green-500 border-2 border-brand-dark w-6 h-6 rounded-full flex items-center justify-center" title="Disponible">
+                <i class="fa-solid fa-check text-xs text-white"></i>
+            </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+            Transforma tus resultados con <span class="text-brand-accent">Guillermo Castellanos</span>
+        </h1>
+        
+        <p class="max-w-2xl mx-auto text-base sm:text-xl text-gray-300 mb-8 leading-relaxed">
+            Estás a un solo paso de dar el salto que buscas. Da clic abajo para asegurar tu sesión estratégica de manera inmediata vía WhatsApp.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="https://wa.me/573000000000?text=Hola%20Guillermo,%20vengo%20de%20tu%20Instagram%20y%20quiero%20reservar%20mi%20espacio%20ahora." 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-black text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-brand-accent/20 transition-all transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                RESERVAR MI ESPACIO AHORA
+            </a>
+        </div>
+        
+        <p class="text-xs text-gray-400 mt-3">🔒 Sin compromisos ocultos. Respuesta directa y personalizada.</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-gray-800">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">¿Qué obtienes al agendar hoy?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
+                <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Atención Directa</h3>
+                <p class="text-gray-400 text-sm">Conversación personalizada adaptada 100% a tus necesidades actuales y objetivos.</p>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
+                <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Claridad Inmediata</h3>
+                <p class="text-gray-400 text-sm">Estrategias claras y pasos accionables que podrás aplicar desde el primer minuto.</p>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
+                <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Acceso Exclusivo</h3>
+                <p class="text-gray-400 text-sm">Disponibilidad preferencial reservada únicamente para seguidores activos de Instagram.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+        <div class="bg-gradient-to-r from-brand-card to-gray-900 border border-gray-800 p-8 rounded-3xl shadow-2xl">
+            <h3 class="text-xl sm:text-2xl font-bold mb-3">¿Ya me sigues en Instagram?</h3>
+            <p class="text-gray-300 text-sm sm:text-base mb-6">Conéctate con mi contenido diario, casos de éxito y consejos exclusivos.</p>
+            <a href="https://www.instagram.com/guillermocastellanos1/" target="_blank" 
+               class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-md">
+                <i class="fa-brands fa-instagram text-xl"></i>
+                Visitar @guillermocastellanos1
+            </a>
+        </div>
+    </section>
+
+    <footer class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-500 text-xs border-t border-gray-800/60">
+        <p>&copy; 2026 Guillermo Castellanos. Todos los derechos reservados.</p>
+        <p class="mt-1">Diseñado para maximizar la conversión y optimizar la reserva inmediata.</p>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/573000000000?text=Hola%20Guillermo,%20quiero%20reservar%20mi%20espacio%20ahora." 
+           class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition-transform hover:scale-110"
+           title="Reservar por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
