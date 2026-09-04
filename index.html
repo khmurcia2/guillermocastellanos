@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva Inmediata | Guillermo Castellanos</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -25,15 +26,19 @@
 </head>
 <body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
 
+    <!-- BARRA SUPERIOR DE URGENCIA -->
     <div class="bg-brand-accent text-brand-dark font-bold text-xs sm:text-sm py-2 px-4 text-center tracking-wide">
         ⚡ ¡Cupos limitados disponibles para esta semana! Asegura tu espacio ahora.
     </div>
 
+    <!-- HEADER / HERO SECTION CON VIDEO DE INSTAGRAM -->
     <header class="relative overflow-hidden pt-10 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+        <!-- Elemento decorativo de fondo -->
         <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-10 pointer-events-none">
             <div class="w-96 h-96 bg-brand-accent rounded-full blur-3xl"></div>
         </div>
 
+        <!-- Título Principal -->
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
             Transforma tus resultados con <span class="text-brand-accent">Guillermo Castellanos</span>
         </h1>
@@ -42,6 +47,7 @@
             Estás a un solo paso de dar el salto que buscas. Mira el video y asegura tu sesión estratégica de manera inmediata vía WhatsApp.
         </p>
 
+        <!-- CONTENEDOR DEL VIDEO DE INSTAGRAM EMBEBIDO -->
         <div class="max-w-md mx-auto mb-8 bg-brand-card rounded-2xl overflow-hidden border border-gray-800 shadow-2xl p-2">
             <div style="width: 100%; display: flex; justify-content: center;">
                 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DbYjZvkNGU5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#111827; border:0; border-radius:12px; box-shadow:none; margin: 0; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
@@ -49,8 +55,9 @@
             </div>
         </div>
 
+        <!-- CTA Principal -->
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="https://wa.me/573000000000?text=Hola%20Guillermo,%20vengo%20de%20tu%20Instagram%20y%20quiero%20reservar%20mi%20espacio%20ahora." 
+            <a href="https://wa.me/573006618442?text=Hola%20Guillermo,%20vengo%20de%20tu%20Instagram%20y%20quiero%20reservar%20mi%20espacio%20ahora." 
                class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-black text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-brand-accent/20 transition-all transform hover:-translate-y-0.5">
                 <i class="fa-brands fa-whatsapp text-2xl"></i>
                 RESERVAR MI ESPACIO AHORA
@@ -60,10 +67,12 @@
         <p class="text-xs text-gray-400 mt-3">🔒 Sin compromisos ocultos. Respuesta directa y personalizada.</p>
     </header>
 
+    <!-- BENEFICIOS / POR QUÉ RESERVAR -->
     <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-gray-800">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">¿Qué obtienes al agendar hoy?</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Beneficio 1 -->
             <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
                 <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
                     <i class="fa-solid fa-bolt"></i>
@@ -72,6 +81,7 @@
                 <p class="text-gray-400 text-sm">Conversación personalizada adaptada 100% a tus necesidades actuales y objetivos.</p>
             </div>
 
+            <!-- Beneficio 2 -->
             <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
                 <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
                     <i class="fa-solid fa-chart-line"></i>
@@ -80,6 +90,7 @@
                 <p class="text-gray-400 text-sm">Estrategias claras y pasos accionables que podrás aplicar desde el primer minuto.</p>
             </div>
 
+            <!-- Beneficio 3 -->
             <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-colors">
                 <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-xl mb-4 font-bold">
                     <i class="fa-solid fa-shield-halved"></i>
@@ -90,6 +101,7 @@
         </div>
     </section>
 
+    <!-- SECCIÓN DE PRUEBA SOCIAL / INSTAGRAM -->
     <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
         <div class="bg-gradient-to-r from-brand-card to-gray-900 border border-gray-800 p-8 rounded-3xl shadow-2xl">
             <h3 class="text-xl sm:text-2xl font-bold mb-3">¿Ya me sigues en Instagram?</h3>
@@ -102,13 +114,15 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-500 text-xs border-t border-gray-800/60">
         <p>&copy; 2026 Guillermo Castellanos. Todos los derechos reservados.</p>
         <p class="mt-1">Diseñado para maximizar la conversión y optimizar la reserva inmediata.</p>
     </footer>
 
+    <!-- BOTÓN FLOTANTE DE WHATSAPP PARA MÓVIL -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/573000000000?text=Hola%20Guillermo,%20quiero%20reservar%20mi%20espacio%20ahora." 
+        <a href="https://wa.me/573006618442?text=Hola%20Guillermo,%20quiero%20reservar%20mi%20espacio%20ahora." 
            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition-transform hover:scale-110"
            title="Reservar por WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
